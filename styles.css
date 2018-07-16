@@ -1,0 +1,17 @@
+div {
+  font-size: 22px; }
+
+.main-content {
+  height: 300px;
+  text-align: center; }
+
+.row > div {
+  padding: 20px;
+  border: 2px solid white;
+  background-color: black;
+  color: white; }
+
+.special {
+  background-color: black; }
+
+/*# sourceMappingURL=styles.css.map */
