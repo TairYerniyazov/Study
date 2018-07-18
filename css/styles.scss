@@ -1,12 +1,6 @@
 $main_color: black;
 %main_font{
-  color: yellow;
-}
-
-@media (min-width: 1600px) {
-    .container{
-        max-width: 1500px!important;
-    }
+  color: white;
 }
 
 .row > div{
@@ -24,7 +18,7 @@ div{
 }
 
 .main-content{
-  min-height: 300px;
+  min-height: 220px;
   text-align: center;
   border-bottom: 1px white solid;
   margin-bottom: 15px;
@@ -34,12 +28,12 @@ div{
     }
 
     h1{
-      margin-top: 60px;
+      margin-top: 30px;
     }
 
 }
 
-.cities {
+#cities {
   text-align: center;
 
     img{
@@ -60,7 +54,7 @@ div{
     }
 }
 
-.people{
+#people{
   text-align: center;
   margin-bottom: 5%;
 
@@ -74,14 +68,22 @@ div{
     }
 }
 
-.data{
+#data{
     font-style: italic;
     font-size: 24px;
 
     img{
-      width: 100%;
+      width: 98%;
       margin-top: 25px;
       box-shadow: 0 0 20px white;
+    }
+
+    p{
+      margin: 20px;
+    }
+
+    > div{
+      padding: 0px;
     }
 }
 
@@ -89,9 +91,65 @@ div{
   padding: 5px!important;
   text-align: center;
   border: white solid 1px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+
+    h2{
+      margin: 5px;
+    }
 }
 
 .footer{
   text-align: right;
   border-top: 2px white solid;
+}
+
+.header{
+  border-bottom: 1px white solid;
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul{
+    margin: 5px;
+    padding: 5px;
+  }
+
+  li{
+    display: inline;
+    margin-right: 30px;
+    border: 1px white solid;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 3px 10px 3px 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+    .container{
+        max-width: 1500px!important;
+    }
+}
+
+@media (max-width: 560px){
+  .header{
+    text-align: center;
+    margin-bottom: 15px;
+
+      li{
+        display: inline-block;
+        margin-right: 0px;
+      }
+  }
+
+}
+
+.some_video{
+    text-align: center;
+
+    video{
+      width: 90%;
+    }
 }
