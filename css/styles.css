@@ -1,5 +1,5 @@
 div, .cities h2 {
-  color: white; }
+  color: yellow; }
 
 @media (min-width: 1600px) {
   .container {
