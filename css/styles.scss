@@ -1,0 +1,92 @@
+$main_color: black;
+%main_font{
+  color: white;
+}
+
+@media (min-width: 1600px) {
+    .container{
+        max-width: 1500px!important;
+    }
+}
+
+.row > div{
+  padding: 20px;
+  /*border: 2px solid white;*/
+  background-color: $main_color;
+}
+
+.special{
+  background-color: $main_color;
+}
+
+div{
+  @extend %main_font;
+}
+
+.main-content{
+  min-height: 300px;
+  text-align: center;
+  border-bottom: 1px white solid;
+  margin-bottom: 15px;
+
+    p{
+      font-size: 19px;
+    }
+
+    h1{
+      margin-top: 60px;
+    }
+
+}
+
+.cities {
+  text-align: center;
+
+    img{
+      width: 95%;
+      margin: 10px;
+      transition: 0.8s;
+    }
+
+    img:hover{
+      width: 97%;
+      box-shadow: 0 0 30px yellow;
+
+    }
+
+    h2{
+      @extend %main_font;
+      font-size: 22px;
+    }
+}
+
+.people{
+  text-align: center;
+  margin-bottom: 5%;
+
+    p{
+      margin-top: 30px;
+    }
+
+    img{
+      width: 90%;
+      box-shadow: 0px 0px 15px white;
+    }
+}
+
+.data{
+    font-style: italic;
+    font-size: 24px;
+
+    img{
+      width: 100%;
+      margin-top: 25px;
+      box-shadow: 0 0 20px white;
+    }
+}
+
+.data_title{
+  padding: 5px!important;
+  text-align: center;
+  border: white solid 1px;
+}
